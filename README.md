@@ -1,6 +1,6 @@
 ## Guitar Chord Finder
 
-(https://codesandbox.io/s/github/hellogareth/guitar-chord-finder)
+https://codesandbox.io/s/github/hellogareth/guitar-chord-finder
 
 Click here to see the [live demo](https://4rzwprq7y7.codesandbox.io/).
 
