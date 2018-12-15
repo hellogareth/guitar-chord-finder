@@ -1,9 +1,7 @@
-##Guitar Chord Finder
+## Guitar Chord Finder
 
-[Editor view]
-(https://codesandbox.io/s/github/hellogareth/guitar-chord-finder)
-[Live demo]
-(https://4rzwprq7y7.codesandbox.io/)
+[Editor view](https://codesandbox.io/s/github/hellogareth/guitar-chord-finder)
+[Live demo](https://4rzwprq7y7.codesandbox.io/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
