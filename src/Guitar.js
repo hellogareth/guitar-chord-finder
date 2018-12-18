@@ -31,10 +31,19 @@ class Guitar extends React.Component {
     })
 
     //String Animations
-    strum.to(restingString_6, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_6.getAttribute('points') } })
+    strum
+      .to(restingString_6, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_6.getAttribute('points') } })
       .to(restingString_6, 1, { morphSVG: { points: restingString_6.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) })
       .to(restingString_5, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_5.getAttribute('points') } }, "-=1.1")
       .to(restingString_5, 1, { morphSVG: { points: restingString_5.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+      .to(restingString_4, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_4.getAttribute('points') } }, "-=1.1")
+      .to(restingString_4, 1, { morphSVG: { points: restingString_4.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+      .to(restingString_3, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_3.getAttribute('points') } }, "-=1.1")
+      .to(restingString_3, 1, { morphSVG: { points: restingString_3.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+      .to(restingString_2, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_2.getAttribute('points') } }, "-=1.1")
+      .to(restingString_2, 1, { morphSVG: { points: restingString_2.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+      .to(restingString_1, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_1.getAttribute('points') } }, "-=1.1")
+      .to(restingString_1, 1, { morphSVG: { points: restingString_1.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
 
     function playChord() {
       strum.restart();
