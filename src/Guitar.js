@@ -6,52 +6,52 @@ class Guitar extends React.Component {
   componentDidUpdate() {
     //GSAP
     //Varibles for the animation
-    const bend = 2;
-    const guitar = document.getElementById('guitar');
+    // const bend = 2;
+    // const guitar = document.getElementById('guitar');
 
     //Resting strings
-    const restingString_6 = document.getElementById('restingString_6');
-    const restingString_5 = document.getElementById('restingString_5');
-    const restingString_4 = document.getElementById('restingString_4');
-    const restingString_3 = document.getElementById('restingString_3');
-    const restingString_2 = document.getElementById('restingString_2');
-    const restingString_1 = document.getElementById('restingString_1');
+    // const restingString_6 = document.getElementById('restingString_6');
+    // const restingString_5 = document.getElementById('restingString_5');
+    // const restingString_4 = document.getElementById('restingString_4');
+    // const restingString_3 = document.getElementById('restingString_3');
+    // const restingString_2 = document.getElementById('restingString_2');
+    // const restingString_1 = document.getElementById('restingString_1');
 
-    //Vibrating strings
-    const vibratingString_6 = document.getElementById('vibratingString_6');
-    const vibratingString_5 = document.getElementById('vibratingString_5');
-    const vibratingString_4 = document.getElementById('vibratingString_4');
-    const vibratingString_3 = document.getElementById('vibratingString_3');
-    const vibratingString_2 = document.getElementById('vibratingString_2');
-    const vibratingString_1 = document.getElementById('vibratingString_1');
+    // //Vibrating strings
+    // const vibratingString_6 = document.getElementById('vibratingString_6');
+    // const vibratingString_5 = document.getElementById('vibratingString_5');
+    // const vibratingString_4 = document.getElementById('vibratingString_4');
+    // const vibratingString_3 = document.getElementById('vibratingString_3');
+    // const vibratingString_2 = document.getElementById('vibratingString_2');
+    // const vibratingString_1 = document.getElementById('vibratingString_1');
 
     //Timeline
-    var strum = new TimelineMax({
-      paused: true
-    })
+    // var strum = new TimelineMax({
+    //   paused: true
+    // })
 
     //String Animations
-    strum
-      .to(restingString_6, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_6.getAttribute('points') } })
-      .to(restingString_6, 1, { morphSVG: { points: restingString_6.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) })
-      .to(restingString_5, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_5.getAttribute('points') } }, "-=1.1")
-      .to(restingString_5, 1, { morphSVG: { points: restingString_5.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
-      .to(restingString_4, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_4.getAttribute('points') } }, "-=1.1")
-      .to(restingString_4, 1, { morphSVG: { points: restingString_4.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
-      .to(restingString_3, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_3.getAttribute('points') } }, "-=1.1")
-      .to(restingString_3, 1, { morphSVG: { points: restingString_3.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
-      .to(restingString_2, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_2.getAttribute('points') } }, "-=1.1")
-      .to(restingString_2, 1, { morphSVG: { points: restingString_2.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
-      .to(restingString_1, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_1.getAttribute('points') } }, "-=1.1")
-      .to(restingString_1, 1, { morphSVG: { points: restingString_1.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+    // strum
+    //   .to(restingString_6, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_6.getAttribute('points') } })
+    //   .to(restingString_6, 1, { morphSVG: { points: restingString_6.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) })
+    //   .to(restingString_5, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_5.getAttribute('points') } }, "-=1.1")
+    //   .to(restingString_5, 1, { morphSVG: { points: restingString_5.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+    //   .to(restingString_4, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_4.getAttribute('points') } }, "-=1.1")
+    //   .to(restingString_4, 1, { morphSVG: { points: restingString_4.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+    //   .to(restingString_3, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_3.getAttribute('points') } }, "-=1.1")
+    //   .to(restingString_3, 1, { morphSVG: { points: restingString_3.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+    //   .to(restingString_2, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_2.getAttribute('points') } }, "-=1.1")
+    //   .to(restingString_2, 1, { morphSVG: { points: restingString_2.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
+    //   .to(restingString_1, 0.1, { ease: Expo.easeOut, morphSVG: { points: vibratingString_1.getAttribute('points') } }, "-=1.1")
+    //   .to(restingString_1, 1, { morphSVG: { points: restingString_1.getAttribute('points') }, ease: Elastic.easeOut.config(bend, 0.04) }, "-=1")
 
-    function playChord() {
-      strum.restart();
-      strum.play();
-    }
+    // function playChord() {
+    //   strum.restart();
+    //   strum.play();
+    // }
 
     //Play chord
-    guitar.addEventListener("click", playChord);
+    //guitar.addEventListener("click", playChord);
   }
 
   render() {
